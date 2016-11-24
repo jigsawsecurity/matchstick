@@ -8,7 +8,7 @@ current_time=$(date "+%Y.%m.%d-%H.%M.%S")
 cd /tmp
 mkdir match
 cd /tmp/match
-wget -O data.csv --header="Authorization: INSERT JIGSAW API KEY HERE" http://ui.slcsecurity.com/events/csv/download/false/false/MALWARE/false/false/true/false/false/1d
+wget -O data.csv --header="Authorization: INSERT JIGSAW API KEY HERE" http://misp/events/csv/download/false/false/MALWARE/false/false/true/false/false/1d
 cat data.csv |grep domain > dataset.csv
 cat data.csv |grep hostname >> dataset.csv
 cat data.csv |grep ip-src >> dataset.csv
